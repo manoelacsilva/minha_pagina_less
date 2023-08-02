@@ -1,5 +1,5 @@
 .marginBottom8 {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 * {
   margin: 0;
@@ -10,6 +10,9 @@
 body {
   background-color: #192a56;
   color: #f5f6fa;
+}
+li {
+  list-style: none;
 }
 .container {
   max-width: 960px;
@@ -33,17 +36,19 @@ header .profile-avatar {
   display: block;
   margin: 0 auto 24px;
   border-radius: 50%;
+  height: 180px;
+  max-width: 100%;
 }
 .profile-bio {
   text-align: center;
 }
 .profile-bio-name {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 14px;
 }
 .profile-bio-subtitle {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 14px;
 }
 .profile-bio-description {
   font-size: 16px;
@@ -56,12 +61,29 @@ header .profile-avatar {
   width: 100%;
   margin: 0 auto;
 }
-.social-links li {
-  list-style: none;
-}
 .social-links li img {
   transition: all ease 0.3s;
 }
 .social-links li img:hover {
   transform: scale(1.2);
+}
+.projects-list {
+  margin-top: 25px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #0097e6;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #f5f6fa;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #0097e6;
+  transition: all ease 0.5s;
+}
+.projects-list-item a:hover {
+  color: #0097e6;
+  background-color: transparent;
 }

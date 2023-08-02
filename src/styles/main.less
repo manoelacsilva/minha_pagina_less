@@ -4,7 +4,7 @@
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
 .marginBottom8 {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 * {
@@ -17,6 +17,10 @@
 body {
     background-color: #colors[backgroundColor];
     color: #colors[textColor];
+}
+
+li {
+    list-style: none;
 }
 
 .container {
@@ -40,6 +44,8 @@ header {
         display: block;
         margin: 0 auto 24px;
         border-radius: 50%;
+        height: 180px;
+        max-width: 100%;
     }
 }
 
@@ -47,12 +53,12 @@ header {
     text-align: center;
 
     &-name {
-        font-size: 18px;
+        font-size: 24px;
         .marginBottom8();
     }
 
     &-subtitle {
-        font-size: 16px;
+        font-size: 20px;
         .marginBottom8();
     }
 
@@ -70,12 +76,35 @@ header {
     margin: 0 auto;
 
     li {
-        list-style: none;
-
         img {
             transition: all ease .3s;
             &:hover {
                 transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.projects-list {
+    margin-top: 25px;
+
+    &-item {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttonColor];
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #colors[textColor];
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #colors[buttonColor];
+            transition: all ease .5s;
+
+            &:hover {
+                color: #colors[buttonColor];
+                background-color: transparent;
             }
         }
     }
